@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 5
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sit", "testme1\sit.csproj", "{1E59B1E1-4B37-476A-98BD-60FBA3286BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloproj", "helloproj\helloproj.csproj", "{617D8024-A717-4DBF-9462-95641B3C4FD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E59B1E1-4B37-476A-98BD-60FBA3286BB2}.Debug|x86.Build.0 = Debug|x86
+		{1E59B1E1-4B37-476A-98BD-60FBA3286BB2}.Debug|x86.ActiveCfg = Debug|x86
+		{1E59B1E1-4B37-476A-98BD-60FBA3286BB2}.Release|x86.Build.0 = Release|x86
+		{1E59B1E1-4B37-476A-98BD-60FBA3286BB2}.Release|x86.ActiveCfg = Release|x86
+		{617D8024-A717-4DBF-9462-95641B3C4FD3}.Debug|x86.Build.0 = Debug|x86
+		{617D8024-A717-4DBF-9462-95641B3C4FD3}.Debug|x86.ActiveCfg = Debug|x86
+		{617D8024-A717-4DBF-9462-95641B3C4FD3}.Release|x86.Build.0 = Release|x86
+		{617D8024-A717-4DBF-9462-95641B3C4FD3}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

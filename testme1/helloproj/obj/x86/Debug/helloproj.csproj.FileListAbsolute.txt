@@ -1,0 +1,9 @@
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\bin\Debug\helloproj.rxtmg
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\bin\Debug\helloproj.dll
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\bin\Debug\helloproj.pdb
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\bin\Debug\Ranorex.Core.WinApi.dll
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\bin\Debug\Ranorex.Core.Injector.dll
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\bin\Debug\Ranorex.Libs.WinForms.dll
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\obj\x86\Debug\helloproj.dll
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\obj\x86\Debug\helloproj.pdb
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\obj\x86\Debug\helloproj.csprojResolveAssemblyReference.cache

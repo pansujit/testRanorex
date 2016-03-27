@@ -1,0 +1,53 @@
+﻿<testsuite
+name="testme1"
+rxversion="5.4.5.19886"
+id="fc8034fc-a8b2-4d34-a589-e966e800ae2e"
+reportfilename="%S_%Y%M%D_%T.rxlog"
+reporttemplatefolder=""
+reportxslfilename=""
+placescreenshotsinfolder="True"
+ReportTime="RelativeToTestSuiteStartTime"
+reportwriteinterval="30000ms"
+reportcompress="False"
+enabletracingscreenshots="True"
+TracingScreenshotMode="Foreground"
+TracingScreenshotQuality="40"
+reportlevel="Info;20">
+	<content>
+		<testcase
+		name="sit"
+		id="f5e31425-8507-4b47-a822-997f38dba258">
+			<testmodule
+			name="Testme"
+			id="a191fd1f-9e5f-4ef2-b227-8e087a423662"
+			ref="49a4a8a6-1563-4c0b-abe6-042fec337c37"
+			type="Recording"/>
+		</testcase>
+		<testcase
+		name="manager"
+		id="9bbd9cf7-db17-4b89-b8c6-27047efba0c9">
+			<testmodule
+			name="Helloproj"
+			id="c3638806-f559-42b8-8af8-e1f9302fe60d"
+			ref="a5fa6156-b376-4ef0-b03d-d8876034e79a"
+			type="Recording"/>
+		</testcase>
+	</content>
+	<testconfigurations
+	default="TestRun">
+		<testconfiguration
+		name="TestRun">
+			<testcase
+			id="9bbd9cf7-db17-4b89-b8c6-27047efba0c9"/>
+			<testcase
+			id="f5e31425-8507-4b47-a822-997f38dba258"/>
+			<testcase
+			id="fc8034fc-a8b2-4d34-a589-e966e800ae2e"/>
+		</testconfiguration>
+	</testconfigurations>
+	<references>
+		<reference>
+			helloproj.dll
+		</reference>
+	</references>
+</testsuite>

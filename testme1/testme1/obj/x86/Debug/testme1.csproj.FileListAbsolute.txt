@@ -1,0 +1,8 @@
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\testme1.rxtmg
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\testme1.rxtst
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\testme1.exe.config
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\testme1.exe
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\testme1.pdb
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\obj\x86\Debug\testme1.csprojResolveAssemblyReference.cache
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\obj\x86\Debug\testme1.exe
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\obj\x86\Debug\testme1.pdb

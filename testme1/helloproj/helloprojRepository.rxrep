@@ -1,0 +1,242 @@
+﻿<repository
+name="helloprojRepository"
+id="41603f73-4510-4bc9-b3e8-f063a78cebda"
+rxversion="5.4.5.19886">
+	<codegen
+	classname="helloprojRepository"
+	namespace="helloproj"/>
+	<rootfolder
+	name="Root"
+	id="e2cfde25-ff44-4911-af4b-7eb8f2effe47"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="SYSTRANDictionaryManager"
+		id="f7845a00-81de-4706-9389-3fd5aeca1233"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='SYSTRAN Dictionary Manager']"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="File"
+			id="fc52f8c5-fc9c-44ec-a41d-8c29303ea8b2"
+			searchtimeout="30000ms"
+			capname="menuitem"
+			refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container/menubar/menuitem[@accessiblename='File']"
+			addcaps="menuitem,accessible"
+			refimgid="1875b076-1073-4977-bb20-f2b06d7fae5b">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']//menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='File']
+			</item>
+			<item
+			name="NumberOfEntries1"
+			id="64fb644c-bd21-406b-9a18-c12bbc58164e"
+			searchtimeout="30000ms"
+			capname="unknown"
+			refpath="/form[@title='SYSTRAN Dictionary Manager']/element[@controltypename='MdiClient']/form[@controlid='1']/container[@caption='hello']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='Number of entries: 1']"
+			addcaps="unknown,accessible"
+			refimgid="2e0461a8-8f8e-44ab-be70-21bb0ec5b0df">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']/?/?/form[@controlid='1']//container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='Number of entries: 1']
+			</item>
+			<item
+			name="Close"
+			id="c08fdf09-b033-4689-90f0-24d56ae0bb6c"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/titlebar/button[@accessiblename='Close']"
+			addcaps="button,accessible"
+			refimgid="75928db6-3be0-4f03-aec0-c3322992d7da">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']/?/?/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAGjSURBVDhPnVJLS0JhEM3+gPv+RlkZbdq1iyC8
+ZosuBEJtCmrRwkWLIltlFBTuCisINyFC0GsRhJrZy0WlKJE9DEyJSky908z4XV/pwg4c5mPOnDPf
+/bhNtQAAzYqiWLD6sYaRTqReyPWBBg0OJm7fvsCwcQWtix5m94oPtgIvKDPMYrwSaGzJ5hXQ2bxF
+Yy2eRJKAszfCVgCman5yyp9hnc0DF08fvLa8v4m3wRCXsPP2RPkA0fOQYiNh5/K1QiN+ZnIkafnB
+DkOJojC8HSShLvKKwjfoWfXTLaK03dK17GNzG9LuicHsfgSmXPcwsXvHde4gAutnz3yrTC4vogqg
+gHN1u8qOhUPoGxkHSZKY/fIodM7vVfXGIBaLcUC4OmBgSIZ4PC52AKTTaTYlk0nRAchms9yjAKeC
+jbXTR+i1BziAhFSq9IgE6lVDDdBHEt+iVUBDAQT1H2hf8sK0O9R4AJ7N9NrqGzQcQMBPCQ46rv8f
+QMAQ11H4nQWTycS1Ho1GI1dhLQGDtSTIsgwOhwPcbjdYrVYeNhgMx8hJPM9gjUqSBL+NMq6qJi0v
+JwAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="SystranDictionaryManager1"
+		id="791998b8-5cb8-44df-8ef3-c3cf0670ddf1"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='' and @processname='SystranDictionaryManager' and @controltypename='DropDownForm']"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="MenuPopup"
+			id="43244df9-5233-48c8-bfb0-81bfa2880e0a"
+			searchtimeout="30000ms"
+			capname="contextmenu"
+			refpath="/form[@title='' and @processname='SystranDictionaryManager' and @controltypename='DropDownForm']/element/contextmenu[@accessiblerole='MenuPopup']"
+			addcaps="contextmenu,accessible"
+			refimgid="2fea3ae4-0c8c-4dfb-96c7-5caa4708b941">
+				/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/contextmenu[@accessiblerole='MenuPopup']
+			</item>
+			<item
+			name="ListItemValuelistValueListItem2"
+			id="730cdbd9-e9d0-4323-a1d1-88e41aa1a641"
+			searchtimeout="30000ms"
+			capname="listitem"
+			refpath="/form[@title='' and @processname='SystranDictionaryManager']/element/listitem[@automationid='[valuelist] ValueListItem 2']"
+			addcaps="listitem,uiautomation"
+			refimgid="02239fa9-03fc-4e74-a8e0-e76b0fe37ff0">
+				/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/listitem[@automationid='[valuelist] ValueListItem 2']
+			</item>
+			<item
+			name="ListItemValuelistValueListItem0"
+			id="b1dc373e-0d66-436c-8410-53b257fdb84d"
+			searchtimeout="30000ms"
+			capname="listitem"
+			refpath="/form[@title='' and @processname='SystranDictionaryManager']/element/listitem[@automationid='[valuelist] ValueListItem 0']"
+			addcaps="listitem,uiautomation"
+			refimgid="06b782bc-0982-4992-8f56-5bec5390f2cb">
+				/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/listitem[@automationid='[valuelist] ValueListItem 0']
+			</item>
+			<basepath>
+				/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="DictionaryPropertiesBaseForm"
+		id="98ca0ed2-7da1-404e-ae0c-544f3af8b873"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@controlname='DictionaryPropertiesBaseForm']"
+		addcaps="form,control,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ButtonEditorDropdownButton"
+			id="1c011f33-182f-456e-963b-be0ab2b84e0a"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='cbDictType']/button[@automationid='[Editor] dropdown button']"
+			addcaps="button,uiautomation,uiautomationinvoke"
+			refimgid="62d7ab3a-b645-46b3-9921-2c7bd864cc22">
+				/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='cbDictType']/button[@automationid='[Editor] dropdown button']
+			</item>
+			<item
+			name="TextEditorEditArea"
+			id="904d0c8a-bb2b-45b6-b520-c5061e8b199b"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='txtDictName']/text[@automationid='[Editor] Edit Area']"
+			addcaps="text,uiautomation,uiautomationvalue"
+			refimgid="f385ca9a-4306-403c-851d-de7225b2ca03">
+				/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='txtDictName']/text[@automationid='[Editor] Edit Area']
+			</item>
+			<item
+			name="TxtDictName"
+			id="3dc5d80a-a5ff-4865-8207-41a95122387e"
+			searchtimeout="30000ms"
+			capname="unknown"
+			addcaps="unknown,control,nativewindow"
+			refimgid="a2d4fa94-785b-411d-b097-14935400922d">
+				/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='txtDictName']
+			</item>
+			<item
+			name="ButtonEditorDropdownButton1"
+			id="9497a5b2-c423-49f2-aa31-60dd0b81166d"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='cbTrgLang']/button[@automationid='[Editor] dropdown button']"
+			addcaps="button,uiautomation,uiautomationinvoke"
+			refimgid="acb65cf1-7845-42b6-8c27-a1dc11595c5a">
+				/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='cbTrgLang']/button[@automationid='[Editor] dropdown button']
+			</item>
+			<item
+			name="ButtonOK"
+			id="11ca7e80-ac75-424d-a585-76c27164c6de"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='btOk']/button[@accessiblename='OK']"
+			addcaps="button,accessible"
+			refimgid="81aece8d-bd76-47eb-8e66-64f268bfa933">
+				/form[@controlname='DictionaryPropertiesBaseForm']/?/?/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@controlname='DictionaryPropertiesBaseForm']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH4SURBVDhPrdFdSJNhGMbxR1BzhTJzapnsJGgU
+RnQQEXYQhGkEgRIUihSzrKyEMM0ME00ENRY6WjPLmOasObKkHDTKmoSBERUZbNWsVdtys/nRKjr5
+9+F74AvBwLrggufk/l0Hj/gveTDoYD6VzmcB6SnLsDGZbxOdfPW2EnbXMDNawvTjPCaHNnKlOj4y
+MGRQEfY08cVVzsyzQqYeZTN5by2fB9R0VC6KDNxvTZqzmknIrmGiP4VxaxzGsoVyYGxNNM7VMTzP
+iGVkVRyOlQrsusVMDWcT+r1qUxPoS+DTtWh83QJ9qUIOTN/sJWQ2ETDq8Taexro8noEmJaE7GoL9
+yQR6Ffh7ovjYJfBcFuhK4uRA8KIBf3MDnqpy3hwoQq9O5EaDkuCv1XFLDD6z4INJ8K5D4G4XNO5f
+IAfenzqB+3AxzvwdvMjZTPWSFCy1CfivRuGVVscuCV63CZxGQX1RrBxwFe5idFsWTzPXMZKh4aAq
+7a9/P7fS+SxQkZrKEdVSipPS2J24jAJlOlV9b+l08Kftd+GsDequw7Fu2HrcJgekpyxlZhdGO5y5
+DTVWONoF+9qgoOUH67U9kYG9hiectECpCbTnIV/3ndz6ADmVr1iReyEykFc3yJ5zsLM5zPZaH1sq
+XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="Hello"
+		id="719ea25e-6789-4c52-b8bc-0ff695c7fe56"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='hello']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ButtonNo"
+			id="a897d18d-82ed-42e4-a2c3-8862aed2ff47"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='hello']/button[@text='&amp;No']"
+			addcaps="button,nativewindow"
+			refimgid="39cdfaf6-6b8b-4816-b444-c98dc50ef4a7">
+				/form[@title='hello']/button[@text='&amp;No']
+			</item>
+			<basepath>
+				/form[@title='hello']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJLSURBVDhPlZLva1JRGMd9sb/E/Qm1GuGbehE1
+6E0trxNhrLJgYntRImTWgnJEL7bWKGL9WKErKtKJsKJf1qDpdemcmc10S3BTdBjmdnVXvd/Oud67
+ZbEXPvDAued5vp/vc885in9DEIR2kkO1ep3NFiu5/Ppmrl4X/HQPgFJq+z9IsY02BdNF/px7Eaqx
+AHYN+8Q8cGcOg6+TWFrb4EmPjfZKskbQDeI4dePDT+yWRHLuu8Xi8HhQXO+96cdkMAMCcTVBqLPt
+3VKTkLpOBFZQqtTwKLDaVHsaylKITRa3zywXeLnYMeLH9ffLKFaqxKQRFGR4GcPRiXnsIVN0jvqR
+KnA8KSlFd/2zqCg+ePcLQiu/G6odguPr+LT0Cx+ThcYUBa7Kdow03I/cD+EUgfXYF3CMuB0fnwXz
+cA69T75iwPUdV98k8fhzArPJHMoERAA+xXy6mJPHl/PQ2WvoO9MPi8UCs9mM7hMGdBkuo+90P6xW
+K0wmE04aBsCybFaxmN/IqcbYLbHqyguoNT3gOE4aGohGo6KoWt0+F7fbDaPRWKJn4F/frMFL/ume
+L43zt5+DYRiUy2WpFUilUqLz3+HxeKBWq8viIXq+5bGwWkJNEOD1elsDkLXy7Y818Rrp62OG7K0B
+pLdguzidEM9g/4UHrQPIdxu5FtelV4ktQCaTQSQSQSwWE5MC6F44HEY8HofT6dwG0KAQOsnk1DRP
+ARqNRgTtlLTeBJBDr9f3arVaj91u9xG3LE2Hw+HT6XTDRNRNRJ0kuwhkkGGYmT8JGsGKAA4XTAAA
+AABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

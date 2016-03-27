@@ -1,0 +1,11 @@
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\helloproj.rxtmg
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\testme1.rxtmg
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\testme1.rxtst
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\sit.exe.config
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\sit.exe
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\sit.pdb
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\helloproj.dll
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\bin\Debug\helloproj.pdb
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\obj\x86\Debug\sit.csprojResolveAssemblyReference.cache
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\obj\x86\Debug\sit.exe
+C:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\testme1\obj\x86\Debug\sit.pdb
