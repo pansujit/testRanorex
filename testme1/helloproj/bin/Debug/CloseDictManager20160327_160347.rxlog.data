@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="26b7b24fefec2d18"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="sujit"
+		host="SUJIT-PC"
+		rxversion="5.4.5.19886"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="64bit"
+		language="en-US"
+		screenresolution="1280x800"
+		timestamp="3/27/2016 4:04:00 PM"
+		timestampiso="2016-03-27T14:04:00"
+		timeoutfactor="1"
+		module="CloseDictManager">
+		<detail>
+			CloseDictManager
+		</detail>
+		<varbindings/>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.954"
+			timeRelativeToTestModuleStartTime="00:00.955"
+			timeWallClock="16:04:01"
+			time="00:00.954"
+			level="Info"
+			category="Mouse"
+			errimg=".\CloseDictManager20160327_160347_31f7cc7f_trace.jpg"
+			errthumb=".\CloseDictManager20160327_160347_31f7cc7f_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'SYSTRANDictionaryManager.Close' at 18;11.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/?/?/button[@accessiblename='Close']"
+				fullname="helloprojRepository.SYSTRANDictionaryManager.Close"
+				id="c08fdf09b033468990f024d56ae0bb6c"
+				timeout="60000"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\CloseDictManager.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.708"
+			timeRelativeToTestModuleStartTime="00:06.709"
+			timeWallClock="16:04:06"
+			time="00:06.708"
+			level="Error"
+			category="User"
+			errimg=".\CloseDictManager20160327_160347_78957365_trace.jpg"
+			errthumb=".\CloseDictManager20160327_160347_78957365_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error"/>
+		</item>
+	</activity>
+</report>

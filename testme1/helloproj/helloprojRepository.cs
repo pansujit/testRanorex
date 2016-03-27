@@ -31,6 +31,8 @@ namespace helloproj
         helloprojRepositoryFolders.SystranDictionaryManager1AppFolder _systrandictionarymanager1;
         helloprojRepositoryFolders.DictionaryPropertiesBaseFormAppFolder _dictionarypropertiesbaseform;
         helloprojRepositoryFolders.HelloAppFolder _hello;
+        helloprojRepositoryFolders.ConfirmDictionaryDeleteAppFolder _confirmdictionarydelete;
+        helloprojRepositoryFolders.FormGhgAppFolder _formghg;
 
         /// <summary>
         /// Gets the singleton class instance representing the helloprojRepository element repository.
@@ -51,6 +53,8 @@ namespace helloproj
             _systrandictionarymanager1 = new helloprojRepositoryFolders.SystranDictionaryManager1AppFolder(this);
             _dictionarypropertiesbaseform = new helloprojRepositoryFolders.DictionaryPropertiesBaseFormAppFolder(this);
             _hello = new helloprojRepositoryFolders.HelloAppFolder(this);
+            _confirmdictionarydelete = new helloprojRepositoryFolders.ConfirmDictionaryDeleteAppFolder(this);
+            _formghg = new helloprojRepositoryFolders.FormGhgAppFolder(this);
         }
 
 #region Variables
@@ -104,6 +108,24 @@ namespace helloproj
         {
             get { return _hello; }
         }
+
+        /// <summary>
+        /// The ConfirmDictionaryDelete folder.
+        /// </summary>
+        [RepositoryFolder("8e461794-84bc-4891-b459-50cdbb2c66a1")]
+        public virtual helloprojRepositoryFolders.ConfirmDictionaryDeleteAppFolder ConfirmDictionaryDelete
+        {
+            get { return _confirmdictionarydelete; }
+        }
+
+        /// <summary>
+        /// The FormGhg folder.
+        /// </summary>
+        [RepositoryFolder("1339aa62-fe7a-4536-ae49-8887eea17e13")]
+        public virtual helloprojRepositoryFolders.FormGhgAppFolder FormGhg
+        {
+            get { return _formghg; }
+        }
     }
 
     /// <summary>
@@ -118,9 +140,16 @@ namespace helloproj
         [RepositoryFolder("f7845a00-81de-4706-9389-3fd5aeca1233")]
         public partial class SYSTRANDictionaryManagerAppFolder : RepoGenBaseFolder
         {
+            helloprojRepositoryFolders.SdmWindowOpenFolder _sdmwindowopen;
             RepoItemInfo _fileInfo;
             RepoItemInfo _numberofentries1Info;
             RepoItemInfo _closeInfo;
+            RepoItemInfo _userdictionariesInfo;
+            RepoItemInfo _englishsourcelanguageInfo;
+            RepoItemInfo _row0Info;
+            RepoItemInfo _frenchtargetlanguageInfo;
+            RepoItemInfo _saveInfo;
+            RepoItemInfo _englishnormalizedInfo;
 
             /// <summary>
             /// Creates a new SYSTRANDictionaryManager  folder.
@@ -128,9 +157,16 @@ namespace helloproj
             public SYSTRANDictionaryManagerAppFolder(RepoGenBaseFolder parentFolder) :
                     base("SYSTRANDictionaryManager", "/form[@title~'^SYSTRAN\\ Dictionary\\ Manage']", parentFolder, 30000, null, true, "f7845a00-81de-4706-9389-3fd5aeca1233", "")
             {
+                _sdmwindowopen = new helloprojRepositoryFolders.SdmWindowOpenFolder(this);
                 _fileInfo = new RepoItemInfo(this, "File", ".//menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='File']", 30000, null, "fc52f8c5-fc9c-44ec-a41d-8c29303ea8b2");
                 _numberofentries1Info = new RepoItemInfo(this, "NumberOfEntries1", "?/?/form[@controlid='1']//container[@accessiblename='DockTop']/toolbar[@accessiblename='Toolbar']/element[@accessiblename='Number of entries: 1']", 30000, null, "64fb644c-bd21-406b-9a18-c12bbc58164e");
                 _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "c08fdf09-b033-4689-90f0-24d56ae0bb6c");
+                _userdictionariesInfo = new RepoItemInfo(this, "UserDictionaries", ".//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='User Dictionaries']", 30000, null, "afa6b728-8c18-4592-8543-9594f4fc71df");
+                _englishsourcelanguageInfo = new RepoItemInfo(this, "EnglishSourceLanguage", ".//table[@controlname='mEntriesView']/row[@accessiblename='0']/cell[@accessiblename='English (Source language)']", 30000, null, "d29d80d2-a863-4d18-98e0-507871782796");
+                _row0Info = new RepoItemInfo(this, "Row0", "?/?/form[@controlid='1']/?/?/table[@controlname='mEntriesView']/row[@accessiblename='0']", 30000, null, "414fa018-df80-4412-abfe-f5309d72f2bb");
+                _frenchtargetlanguageInfo = new RepoItemInfo(this, "FrenchTargetLanguage", ".//table[@controlname='mEntriesView']/row[@accessiblename='0']/cell[@accessiblename='French (Target language)']", 30000, null, "929d9e4e-f7a0-4a9d-9abf-d71eeb29dca7");
+                _saveInfo = new RepoItemInfo(this, "Save", "element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[1]/button[@accessiblename='Save']", 30000, null, "22c35572-072f-48e3-a756-1d9c771510ad");
+                _englishnormalizedInfo = new RepoItemInfo(this, "EnglishNormalized", ".//table[@controlname='mEntriesView']/row[@accessiblename='0']/cell[@accessiblename='English (Normalized)']", 30000, null, "237b7041-a6d8-4ace-ae1d-f99c2b014153");
             }
 
             /// <summary>
@@ -228,6 +264,563 @@ namespace helloproj
                     return _closeInfo;
                 }
             }
+
+            /// <summary>
+            /// The UserDictionaries item.
+            /// </summary>
+            [RepositoryItem("afa6b728-8c18-4592-8543-9594f4fc71df")]
+            public virtual Ranorex.TreeItem UserDictionaries
+            {
+                get
+                {
+                    return _userdictionariesInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserDictionaries item info.
+            /// </summary>
+            [RepositoryItemInfo("afa6b728-8c18-4592-8543-9594f4fc71df")]
+            public virtual RepoItemInfo UserDictionariesInfo
+            {
+                get
+                {
+                    return _userdictionariesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnglishSourceLanguage item.
+            /// </summary>
+            [RepositoryItem("d29d80d2-a863-4d18-98e0-507871782796")]
+            public virtual Ranorex.Cell EnglishSourceLanguage
+            {
+                get
+                {
+                    return _englishsourcelanguageInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnglishSourceLanguage item info.
+            /// </summary>
+            [RepositoryItemInfo("d29d80d2-a863-4d18-98e0-507871782796")]
+            public virtual RepoItemInfo EnglishSourceLanguageInfo
+            {
+                get
+                {
+                    return _englishsourcelanguageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Row0 item.
+            /// </summary>
+            [RepositoryItem("414fa018-df80-4412-abfe-f5309d72f2bb")]
+            public virtual Ranorex.Row Row0
+            {
+                get
+                {
+                    return _row0Info.CreateAdapter<Ranorex.Row>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Row0 item info.
+            /// </summary>
+            [RepositoryItemInfo("414fa018-df80-4412-abfe-f5309d72f2bb")]
+            public virtual RepoItemInfo Row0Info
+            {
+                get
+                {
+                    return _row0Info;
+                }
+            }
+
+            /// <summary>
+            /// The FrenchTargetLanguage item.
+            /// </summary>
+            [RepositoryItem("929d9e4e-f7a0-4a9d-9abf-d71eeb29dca7")]
+            public virtual Ranorex.Cell FrenchTargetLanguage
+            {
+                get
+                {
+                    return _frenchtargetlanguageInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FrenchTargetLanguage item info.
+            /// </summary>
+            [RepositoryItemInfo("929d9e4e-f7a0-4a9d-9abf-d71eeb29dca7")]
+            public virtual RepoItemInfo FrenchTargetLanguageInfo
+            {
+                get
+                {
+                    return _frenchtargetlanguageInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Save item.
+            /// </summary>
+            [RepositoryItem("22c35572-072f-48e3-a756-1d9c771510ad")]
+            public virtual Ranorex.Button Save
+            {
+                get
+                {
+                    return _saveInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Save item info.
+            /// </summary>
+            [RepositoryItemInfo("22c35572-072f-48e3-a756-1d9c771510ad")]
+            public virtual RepoItemInfo SaveInfo
+            {
+                get
+                {
+                    return _saveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The EnglishNormalized item.
+            /// </summary>
+            [RepositoryItem("237b7041-a6d8-4ace-ae1d-f99c2b014153")]
+            public virtual Ranorex.Cell EnglishNormalized
+            {
+                get
+                {
+                    return _englishnormalizedInfo.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The EnglishNormalized item info.
+            /// </summary>
+            [RepositoryItemInfo("237b7041-a6d8-4ace-ae1d-f99c2b014153")]
+            public virtual RepoItemInfo EnglishNormalizedInfo
+            {
+                get
+                {
+                    return _englishnormalizedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SdmWindowOpen folder.
+            /// </summary>
+            [RepositoryFolder("b41a6a1c-14ab-450b-8df3-d36d97135cb7")]
+            public virtual helloprojRepositoryFolders.SdmWindowOpenFolder SdmWindowOpen
+            {
+                get { return _sdmwindowopen; }
+            }
+        }
+
+        /// <summary>
+        /// The SdmWindowOpenFolder folder.
+        /// </summary>
+        [RepositoryFolder("b41a6a1c-14ab-450b-8df3-d36d97135cb7")]
+        public partial class SdmWindowOpenFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _dictionarytypeInfo;
+            RepoItemInfo _treeitemenfrhelloInfo;
+            RepoItemInfo _userdictionariesInfo;
+            RepoItemInfo _authorInfo;
+            RepoItemInfo _sujitInfo;
+            RepoItemInfo _pushbuttonInfo;
+            RepoItemInfo _treeitemyoudonothaveanydictionarieInfo;
+            RepoItemInfo _treeitemenfrhello1Info;
+            RepoItemInfo _normalizationInfo;
+            RepoItemInfo _treeitemenhelloInfo;
+            RepoItemInfo _normalization1Info;
+            RepoItemInfo _treeitemyoudonothaveanydictionarie1Info;
+            RepoItemInfo _translationmemoriesInfo;
+            RepoItemInfo _translationmemories1Info;
+
+            /// <summary>
+            /// Creates a new SdmWindowOpen  folder.
+            /// </summary>
+            public SdmWindowOpenFolder(RepoGenBaseFolder parentFolder) :
+                    base("SdmWindowOpen", ".//container[@controlname='sdm.window.open']", parentFolder, 30000, null, false, "b41a6a1c-14ab-450b-8df3-d36d97135cb7", "")
+            {
+                _dictionarytypeInfo = new RepoItemInfo(this, "DictionaryType", "?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Dictionary type:']", 30000, null, "b779f7b4-50ef-47df-b0d8-6e41c5f68e90");
+                _treeitemenfrhelloInfo = new RepoItemInfo(this, "TreeItemENFRHello", "?/?/tree[@accessiblename='French']/treeitem[@accessiblename='[EN-FR] hello']", 30000, null, "373e509a-7258-4ebc-97cf-cecbdac4ec6a");
+                _userdictionariesInfo = new RepoItemInfo(this, "UserDictionaries", "?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='User Dictionaries']", 30000, null, "96ada926-2d4c-43bf-9e7f-f51712cc9dd8");
+                _authorInfo = new RepoItemInfo(this, "Author", "?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Author:']", 30000, null, "210df204-cad0-4fdd-a318-328242c37327");
+                _sujitInfo = new RepoItemInfo(this, "Sujit", "?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='sujit']", 30000, null, "3e3ec447-b2c3-4cf2-bd53-de96b11336fe");
+                _pushbuttonInfo = new RepoItemInfo(this, "PushButton", ".//toolbar[@accessiblename='Toolbar']/button[@accessiblerole='PushButton' and @text='' and @accessibledescription~'^Delete\\ selected\\ dictionar']", 30000, null, "4ec9cfdc-a041-4b1d-aa01-b899f92b47de");
+                _treeitemyoudonothaveanydictionarieInfo = new RepoItemInfo(this, "TreeItemYouDoNotHaveAnyDictionarie", "?/?/tree[@accessiblename='French']/treeitem[@accessiblename~'^\\(You\\ do\\ not\\ have\\ any\\ Dict']", 30000, null, "e3d7f4f7-f2bc-48ad-b5bd-ccd769e287a1");
+                _treeitemenfrhello1Info = new RepoItemInfo(this, "TreeItemENFRHello1", "element[@controlname='mView']/?/?/treeitem[@accessiblename='[EN-FR] hello']", 30000, null, "92e2ba67-37b6-4dea-95a6-593f7d3851f2");
+                _normalizationInfo = new RepoItemInfo(this, "Normalization", "element[@controlname='mView']/?/?/treeitem[@accessiblename='Normalization']", 30000, null, "210c9ed9-61c4-4356-abe3-bf7f94002ee9");
+                _treeitemenhelloInfo = new RepoItemInfo(this, "TreeItemENHello", "element[@controlname='mView']/?/?/treeitem[@accessiblename='[EN] hello']", 30000, null, "6b93bf6a-fe99-49f7-a796-93882f0bc021");
+                _normalization1Info = new RepoItemInfo(this, "Normalization1", "?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Normalization']", 30000, null, "a31966ff-44af-4ba9-8710-04a9f9bafa6c");
+                _treeitemyoudonothaveanydictionarie1Info = new RepoItemInfo(this, "TreeItemYouDoNotHaveAnyDictionarie1", "?/?/tree[@accessiblename='English']/treeitem[@accessiblename~'^\\(You\\ do\\ not\\ have\\ any\\ Dict']", 30000, null, "4a3e347a-a5d0-406f-8164-393eb2bff7d9");
+                _translationmemoriesInfo = new RepoItemInfo(this, "TranslationMemories", "element[@controlname='mView']/?/?/treeitem[@accessiblename='Translation Memories']", 30000, null, "50d9146d-9670-4e9a-bb57-2974b1e82bbd");
+                _translationmemories1Info = new RepoItemInfo(this, "TranslationMemories1", "?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Translation Memories']", 30000, null, "9959036d-bf39-4d46-a255-4ff56780d301");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("b41a6a1c-14ab-450b-8df3-d36d97135cb7")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("b41a6a1c-14ab-450b-8df3-d36d97135cb7")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DictionaryType item.
+            /// </summary>
+            [RepositoryItem("b779f7b4-50ef-47df-b0d8-6e41c5f68e90")]
+            public virtual Ranorex.Text DictionaryType
+            {
+                get
+                {
+                    return _dictionarytypeInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DictionaryType item info.
+            /// </summary>
+            [RepositoryItemInfo("b779f7b4-50ef-47df-b0d8-6e41c5f68e90")]
+            public virtual RepoItemInfo DictionaryTypeInfo
+            {
+                get
+                {
+                    return _dictionarytypeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemENFRHello item.
+            /// </summary>
+            [RepositoryItem("373e509a-7258-4ebc-97cf-cecbdac4ec6a")]
+            public virtual Ranorex.TreeItem TreeItemENFRHello
+            {
+                get
+                {
+                    return _treeitemenfrhelloInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemENFRHello item info.
+            /// </summary>
+            [RepositoryItemInfo("373e509a-7258-4ebc-97cf-cecbdac4ec6a")]
+            public virtual RepoItemInfo TreeItemENFRHelloInfo
+            {
+                get
+                {
+                    return _treeitemenfrhelloInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UserDictionaries item.
+            /// </summary>
+            [RepositoryItem("96ada926-2d4c-43bf-9e7f-f51712cc9dd8")]
+            public virtual Ranorex.Text UserDictionaries
+            {
+                get
+                {
+                    return _userdictionariesInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UserDictionaries item info.
+            /// </summary>
+            [RepositoryItemInfo("96ada926-2d4c-43bf-9e7f-f51712cc9dd8")]
+            public virtual RepoItemInfo UserDictionariesInfo
+            {
+                get
+                {
+                    return _userdictionariesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Author item.
+            /// </summary>
+            [RepositoryItem("210df204-cad0-4fdd-a318-328242c37327")]
+            public virtual Ranorex.Text Author
+            {
+                get
+                {
+                    return _authorInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Author item info.
+            /// </summary>
+            [RepositoryItemInfo("210df204-cad0-4fdd-a318-328242c37327")]
+            public virtual RepoItemInfo AuthorInfo
+            {
+                get
+                {
+                    return _authorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Sujit item.
+            /// </summary>
+            [RepositoryItem("3e3ec447-b2c3-4cf2-bd53-de96b11336fe")]
+            public virtual Ranorex.Text Sujit
+            {
+                get
+                {
+                    return _sujitInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Sujit item info.
+            /// </summary>
+            [RepositoryItemInfo("3e3ec447-b2c3-4cf2-bd53-de96b11336fe")]
+            public virtual RepoItemInfo SujitInfo
+            {
+                get
+                {
+                    return _sujitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PushButton item.
+            /// </summary>
+            [RepositoryItem("4ec9cfdc-a041-4b1d-aa01-b899f92b47de")]
+            public virtual Ranorex.Button PushButton
+            {
+                get
+                {
+                    return _pushbuttonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PushButton item info.
+            /// </summary>
+            [RepositoryItemInfo("4ec9cfdc-a041-4b1d-aa01-b899f92b47de")]
+            public virtual RepoItemInfo PushButtonInfo
+            {
+                get
+                {
+                    return _pushbuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemYouDoNotHaveAnyDictionarie item.
+            /// </summary>
+            [RepositoryItem("e3d7f4f7-f2bc-48ad-b5bd-ccd769e287a1")]
+            public virtual Ranorex.TreeItem TreeItemYouDoNotHaveAnyDictionarie
+            {
+                get
+                {
+                    return _treeitemyoudonothaveanydictionarieInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemYouDoNotHaveAnyDictionarie item info.
+            /// </summary>
+            [RepositoryItemInfo("e3d7f4f7-f2bc-48ad-b5bd-ccd769e287a1")]
+            public virtual RepoItemInfo TreeItemYouDoNotHaveAnyDictionarieInfo
+            {
+                get
+                {
+                    return _treeitemyoudonothaveanydictionarieInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemENFRHello1 item.
+            /// </summary>
+            [RepositoryItem("92e2ba67-37b6-4dea-95a6-593f7d3851f2")]
+            public virtual Ranorex.TreeItem TreeItemENFRHello1
+            {
+                get
+                {
+                    return _treeitemenfrhello1Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemENFRHello1 item info.
+            /// </summary>
+            [RepositoryItemInfo("92e2ba67-37b6-4dea-95a6-593f7d3851f2")]
+            public virtual RepoItemInfo TreeItemENFRHello1Info
+            {
+                get
+                {
+                    return _treeitemenfrhello1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Normalization item.
+            /// </summary>
+            [RepositoryItem("210c9ed9-61c4-4356-abe3-bf7f94002ee9")]
+            public virtual Ranorex.TreeItem Normalization
+            {
+                get
+                {
+                    return _normalizationInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Normalization item info.
+            /// </summary>
+            [RepositoryItemInfo("210c9ed9-61c4-4356-abe3-bf7f94002ee9")]
+            public virtual RepoItemInfo NormalizationInfo
+            {
+                get
+                {
+                    return _normalizationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemENHello item.
+            /// </summary>
+            [RepositoryItem("6b93bf6a-fe99-49f7-a796-93882f0bc021")]
+            public virtual Ranorex.TreeItem TreeItemENHello
+            {
+                get
+                {
+                    return _treeitemenhelloInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemENHello item info.
+            /// </summary>
+            [RepositoryItemInfo("6b93bf6a-fe99-49f7-a796-93882f0bc021")]
+            public virtual RepoItemInfo TreeItemENHelloInfo
+            {
+                get
+                {
+                    return _treeitemenhelloInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Normalization1 item.
+            /// </summary>
+            [RepositoryItem("a31966ff-44af-4ba9-8710-04a9f9bafa6c")]
+            public virtual Ranorex.Text Normalization1
+            {
+                get
+                {
+                    return _normalization1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Normalization1 item info.
+            /// </summary>
+            [RepositoryItemInfo("a31966ff-44af-4ba9-8710-04a9f9bafa6c")]
+            public virtual RepoItemInfo Normalization1Info
+            {
+                get
+                {
+                    return _normalization1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemYouDoNotHaveAnyDictionarie1 item.
+            /// </summary>
+            [RepositoryItem("4a3e347a-a5d0-406f-8164-393eb2bff7d9")]
+            public virtual Ranorex.TreeItem TreeItemYouDoNotHaveAnyDictionarie1
+            {
+                get
+                {
+                    return _treeitemyoudonothaveanydictionarie1Info.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TreeItemYouDoNotHaveAnyDictionarie1 item info.
+            /// </summary>
+            [RepositoryItemInfo("4a3e347a-a5d0-406f-8164-393eb2bff7d9")]
+            public virtual RepoItemInfo TreeItemYouDoNotHaveAnyDictionarie1Info
+            {
+                get
+                {
+                    return _treeitemyoudonothaveanydictionarie1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TranslationMemories item.
+            /// </summary>
+            [RepositoryItem("50d9146d-9670-4e9a-bb57-2974b1e82bbd")]
+            public virtual Ranorex.TreeItem TranslationMemories
+            {
+                get
+                {
+                    return _translationmemoriesInfo.CreateAdapter<Ranorex.TreeItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TranslationMemories item info.
+            /// </summary>
+            [RepositoryItemInfo("50d9146d-9670-4e9a-bb57-2974b1e82bbd")]
+            public virtual RepoItemInfo TranslationMemoriesInfo
+            {
+                get
+                {
+                    return _translationmemoriesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TranslationMemories1 item.
+            /// </summary>
+            [RepositoryItem("9959036d-bf39-4d46-a255-4ff56780d301")]
+            public virtual Ranorex.Text TranslationMemories1
+            {
+                get
+                {
+                    return _translationmemories1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TranslationMemories1 item info.
+            /// </summary>
+            [RepositoryItemInfo("9959036d-bf39-4d46-a255-4ff56780d301")]
+            public virtual RepoItemInfo TranslationMemories1Info
+            {
+                get
+                {
+                    return _translationmemories1Info;
+                }
+            }
         }
 
         /// <summary>
@@ -239,6 +832,7 @@ namespace helloproj
             RepoItemInfo _menupopupInfo;
             RepoItemInfo _listitemvaluelistvaluelistitem2Info;
             RepoItemInfo _listitemvaluelistvaluelistitem0Info;
+            RepoItemInfo _listitemvaluelistvaluelistitem1Info;
 
             /// <summary>
             /// Creates a new SystranDictionaryManager1  folder.
@@ -249,6 +843,7 @@ namespace helloproj
                 _menupopupInfo = new RepoItemInfo(this, "MenuPopup", "?/?/contextmenu[@accessiblerole='MenuPopup']", 30000, null, "43244df9-5233-48c8-bfb0-81bfa2880e0a");
                 _listitemvaluelistvaluelistitem2Info = new RepoItemInfo(this, "ListItemValuelistValueListItem2", "?/?/listitem[@automationid='[valuelist] ValueListItem 2']", 30000, null, "730cdbd9-e9d0-4323-a1d1-88e41aa1a641");
                 _listitemvaluelistvaluelistitem0Info = new RepoItemInfo(this, "ListItemValuelistValueListItem0", "?/?/listitem[@automationid='[valuelist] ValueListItem 0']", 30000, null, "b1dc373e-0d66-436c-8410-53b257fdb84d");
+                _listitemvaluelistvaluelistitem1Info = new RepoItemInfo(this, "ListItemValuelistValueListItem1", "?/?/listitem[@automationid='[valuelist] ValueListItem 1']", 30000, null, "07e25135-df6a-463b-80ef-8357e502778f");
             }
 
             /// <summary>
@@ -346,6 +941,30 @@ namespace helloproj
                     return _listitemvaluelistvaluelistitem0Info;
                 }
             }
+
+            /// <summary>
+            /// The ListItemValuelistValueListItem1 item.
+            /// </summary>
+            [RepositoryItem("07e25135-df6a-463b-80ef-8357e502778f")]
+            public virtual Ranorex.ListItem ListItemValuelistValueListItem1
+            {
+                get
+                {
+                    return _listitemvaluelistvaluelistitem1Info.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItemValuelistValueListItem1 item info.
+            /// </summary>
+            [RepositoryItemInfo("07e25135-df6a-463b-80ef-8357e502778f")]
+            public virtual RepoItemInfo ListItemValuelistValueListItem1Info
+            {
+                get
+                {
+                    return _listitemvaluelistvaluelistitem1Info;
+                }
+            }
         }
 
         /// <summary>
@@ -359,6 +978,9 @@ namespace helloproj
             RepoItemInfo _txtdictnameInfo;
             RepoItemInfo _buttoneditordropdownbutton1Info;
             RepoItemInfo _buttonokInfo;
+            RepoItemInfo _texteditoreditarea1Info;
+            RepoItemInfo _txtauthorInfo;
+            RepoItemInfo _buttoneditordropdownbutton2Info;
 
             /// <summary>
             /// Creates a new DictionaryPropertiesBaseForm  folder.
@@ -371,6 +993,9 @@ namespace helloproj
                 _txtdictnameInfo = new RepoItemInfo(this, "TxtDictName", "element[@controlname='txtDictName']", 30000, null, "3dc5d80a-a5ff-4865-8207-41a95122387e");
                 _buttoneditordropdownbutton1Info = new RepoItemInfo(this, "ButtonEditorDropdownButton1", "element[@controlname='cbTrgLang']/button[@automationid='[Editor] dropdown button']", 30000, null, "9497a5b2-c423-49f2-aa31-60dd0b81166d");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "?/?/button[@accessiblename='OK']", 30000, null, "11ca7e80-ac75-424d-a585-76c27164c6de");
+                _texteditoreditarea1Info = new RepoItemInfo(this, "TextEditorEditArea1", "element[@controlname='txtAuthor']/text[@automationid='[Editor] Edit Area']", 30000, null, "536f7b95-32d1-4e61-820f-061525a4baf8");
+                _txtauthorInfo = new RepoItemInfo(this, "TxtAuthor", "element[@controlname='txtAuthor']", 30000, null, "c2683cab-77d4-46a8-85fc-2473eb0088c3");
+                _buttoneditordropdownbutton2Info = new RepoItemInfo(this, "ButtonEditorDropdownButton2", "?/?/button[@automationid='[Editor] dropdown button']", 30000, null, "b01bc692-ac86-4aaa-b960-308f829ca076");
             }
 
             /// <summary>
@@ -516,6 +1141,78 @@ namespace helloproj
                     return _buttonokInfo;
                 }
             }
+
+            /// <summary>
+            /// The TextEditorEditArea1 item.
+            /// </summary>
+            [RepositoryItem("536f7b95-32d1-4e61-820f-061525a4baf8")]
+            public virtual Ranorex.Text TextEditorEditArea1
+            {
+                get
+                {
+                    return _texteditoreditarea1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextEditorEditArea1 item info.
+            /// </summary>
+            [RepositoryItemInfo("536f7b95-32d1-4e61-820f-061525a4baf8")]
+            public virtual RepoItemInfo TextEditorEditArea1Info
+            {
+                get
+                {
+                    return _texteditoreditarea1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TxtAuthor item.
+            /// </summary>
+            [RepositoryItem("c2683cab-77d4-46a8-85fc-2473eb0088c3")]
+            public virtual Ranorex.Unknown TxtAuthor
+            {
+                get
+                {
+                    return _txtauthorInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtAuthor item info.
+            /// </summary>
+            [RepositoryItemInfo("c2683cab-77d4-46a8-85fc-2473eb0088c3")]
+            public virtual RepoItemInfo TxtAuthorInfo
+            {
+                get
+                {
+                    return _txtauthorInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEditorDropdownButton2 item.
+            /// </summary>
+            [RepositoryItem("b01bc692-ac86-4aaa-b960-308f829ca076")]
+            public virtual Ranorex.Button ButtonEditorDropdownButton2
+            {
+                get
+                {
+                    return _buttoneditordropdownbutton2Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonEditorDropdownButton2 item info.
+            /// </summary>
+            [RepositoryItemInfo("b01bc692-ac86-4aaa-b960-308f829ca076")]
+            public virtual RepoItemInfo ButtonEditorDropdownButton2Info
+            {
+                get
+                {
+                    return _buttoneditordropdownbutton2Info;
+                }
+            }
         }
 
         /// <summary>
@@ -525,6 +1222,7 @@ namespace helloproj
         public partial class HelloAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _buttonnoInfo;
+            RepoItemInfo _buttonyesInfo;
 
             /// <summary>
             /// Creates a new Hello  folder.
@@ -533,6 +1231,7 @@ namespace helloproj
                     base("Hello", "/form[@title='hello']", parentFolder, 30000, null, true, "719ea25e-6789-4c52-b8bc-0ff695c7fe56", "")
             {
                 _buttonnoInfo = new RepoItemInfo(this, "ButtonNo", "button[@text='&No']", 30000, null, "a897d18d-82ed-42e4-a2c3-8862aed2ff47");
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text='&Yes']", 30000, null, "408df129-25d5-4fbb-b89c-999fb7cbf8e6");
             }
 
             /// <summary>
@@ -575,6 +1274,162 @@ namespace helloproj
             /// The ButtonNo item info.
             /// </summary>
             [RepositoryItemInfo("a897d18d-82ed-42e4-a2c3-8862aed2ff47")]
+            public virtual RepoItemInfo ButtonNoInfo
+            {
+                get
+                {
+                    return _buttonnoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item.
+            /// </summary>
+            [RepositoryItem("408df129-25d5-4fbb-b89c-999fb7cbf8e6")]
+            public virtual Ranorex.Button ButtonYes
+            {
+                get
+                {
+                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item info.
+            /// </summary>
+            [RepositoryItemInfo("408df129-25d5-4fbb-b89c-999fb7cbf8e6")]
+            public virtual RepoItemInfo ButtonYesInfo
+            {
+                get
+                {
+                    return _buttonyesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ConfirmDictionaryDeleteAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("8e461794-84bc-4891-b459-50cdbb2c66a1")]
+        public partial class ConfirmDictionaryDeleteAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonyesInfo;
+
+            /// <summary>
+            /// Creates a new ConfirmDictionaryDelete  folder.
+            /// </summary>
+            public ConfirmDictionaryDeleteAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ConfirmDictionaryDelete", "/form[@title='Confirm Dictionary delete']", parentFolder, 30000, null, true, "8e461794-84bc-4891-b459-50cdbb2c66a1", "")
+            {
+                _buttonyesInfo = new RepoItemInfo(this, "ButtonYes", "button[@text='&Yes']", 30000, null, "efc42e70-95d5-42ed-ad1a-f74260711a15");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("8e461794-84bc-4891-b459-50cdbb2c66a1")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("8e461794-84bc-4891-b459-50cdbb2c66a1")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item.
+            /// </summary>
+            [RepositoryItem("efc42e70-95d5-42ed-ad1a-f74260711a15")]
+            public virtual Ranorex.Button ButtonYes
+            {
+                get
+                {
+                    return _buttonyesInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonYes item info.
+            /// </summary>
+            [RepositoryItemInfo("efc42e70-95d5-42ed-ad1a-f74260711a15")]
+            public virtual RepoItemInfo ButtonYesInfo
+            {
+                get
+                {
+                    return _buttonyesInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormGhgAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1339aa62-fe7a-4536-ae49-8887eea17e13")]
+        public partial class FormGhgAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _buttonnoInfo;
+
+            /// <summary>
+            /// Creates a new FormGhg  folder.
+            /// </summary>
+            public FormGhgAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormGhg", "/form[@title='ghg']", parentFolder, 30000, null, true, "1339aa62-fe7a-4536-ae49-8887eea17e13", "")
+            {
+                _buttonnoInfo = new RepoItemInfo(this, "ButtonNo", "button[@text='&No']", 30000, null, "ca5e5364-64a8-4c94-b1d9-e80b5168f2ec");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1339aa62-fe7a-4536-ae49-8887eea17e13")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1339aa62-fe7a-4536-ae49-8887eea17e13")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNo item.
+            /// </summary>
+            [RepositoryItem("ca5e5364-64a8-4c94-b1d9-e80b5168f2ec")]
+            public virtual Ranorex.Button ButtonNo
+            {
+                get
+                {
+                    return _buttonnoInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonNo item info.
+            /// </summary>
+            [RepositoryItemInfo("ca5e5364-64a8-4c94-b1d9-e80b5168f2ec")]
             public virtual RepoItemInfo ButtonNoInfo
             {
                 get

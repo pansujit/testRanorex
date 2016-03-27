@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Success"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="83eefd69a74d800"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		user="sujit"
+		host="SUJIT-PC"
+		rxversion="5.4.5.19886"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		language="en-US"
+		screenresolution="1280x800"
+		timestamp="3/27/2016 5:33:01 PM"
+		timestampiso="2016-03-27T15:33:01"
+		timeoutfactor="1">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="43.01s"
+			durationms="43005"
+			type="test suite"
+			rid="9ab933a8d64544a"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			testsuitename="testme1"
+			runconfigname="TestRun"
+			runlabel=""
+			maxchildren="6">
+			<params/>
+			<detail>
+			</detail>
+			<activity
+				result="Failed"
+				duration="42.95s"
+				durationms="42948"
+				type="test case"
+				rid="c44a4fabb18c48"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				testcasename="CreateNormlizeDict"
+				testcaseid="85ab241b-02f8-49a9-9143-7e9299289a6d"
+				maxchildren="0">
+				<params/>
+				<detail>
+				</detail>
+				<activity
+					result="Success"
+					duration="332ms"
+					durationms="332"
+					type="test module"
+					rid="223ae0cbe4928c"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="StartDictManager (helloproj)"
+					moduleid="5421c1fd-a67e-4f0a-948b-385e4d19afa1"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.737"
+						timeRelativeToTestModuleStartTime="00:00.016"
+						timeWallClock="17:33:01"
+						time="00:00.737"
+						level="Info"
+						category="Application">
+						<message>
+							Run application 'C:\Program Files (x86)\SYSTRAN 8 TRANSLATOR\applications\SystranDictionaryManager.exe' with arguments '' in normal mode.
+						</message>
+						<metainfo
+							itemindex="0"
+							codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\StartDictManager.cs"
+							codeline="82"
+							loglvl="Info"/>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="12.22s"
+					durationms="12221"
+					type="test module"
+					rid="517516ee62fb834"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="SelectNewDict (helloproj)"
+					moduleid="fed27d7c-9488-4ba5-ae02-75fbbb151835"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:01.080"
+						timeRelativeToTestModuleStartTime="00:00.015"
+						timeWallClock="17:33:02"
+						time="00:01.080"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'SYSTRANDictionaryManager.File' at 13;10.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title~'^SYSTRAN\ Dictionary\ Manage']//menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='File']"
+							fullname="helloprojRepository.SYSTRANDictionaryManager.File"
+							id="fc52f8c5fc9c44eca41d8c29303ea8b2"
+							timeout="60000"
+							codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\SelectNewDict.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:12.064"
+						timeRelativeToTestModuleStartTime="00:10.998"
+						timeWallClock="17:33:13"
+						time="00:12.064"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Click item 'SystranDictionaryManager1.MenuPopup' at 57;12.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/contextmenu[@accessiblerole='MenuPopup']"
+							fullname="helloprojRepository.SystranDictionaryManager1.MenuPopup"
+							id="43244df9523348c8bfb081bfa2880e0a"
+							timeout="60000"
+							codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\SelectNewDict.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info"/>
+					</item>
+				</activity>
+				<activity
+					result="Success"
+					duration="1944ms"
+					durationms="1944"
+					type="test module"
+					rid="1194df3ee17ca0f7"
+					totalerrorcount="0"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="ClickOnDictType (helloproj)"
+					moduleid="317a1fda-76a1-4e9c-a0b7-b8c1d05556f2"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:13.295"
+						timeRelativeToTestModuleStartTime="00:00.005"
+						timeWallClock="17:33:14"
+						time="00:13.295"
+						level="Info"
+						category="Mouse">
+						<message>
+							Mouse Left Down item 'DictionaryPropertiesBaseForm.ButtonEditorDropdownButton' at 8;8.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='cbDictType']/button[@automationid='[Editor] dropdown button']"
+							fullname="helloprojRepository.DictionaryPropertiesBaseForm.ButtonEditorDropdownButton"
+							id="1c011f33182f456e963bbe0ab2b84e0a"
+							timeout="60000"
+							codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\ClickOnDictType.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info"/>
+					</item>
+				</activity>
+				<activity
+					result="Failed"
+					duration="28.3s"
+					durationms="28300"
+					type="test module"
+					rid="7784ea009c4b4b1"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					modulename="ClickOnNormalizationInOpenDict (helloproj)"
+					moduleid="fc25411c-38f8-48dc-a787-bec6e7abbd07"
+					moduletype="Recording">
+					<detail>
+					</detail>
+					<errmsg>
+						Failed to find item 'helloprojRepository.SYSTRANDictionaryManager.SdmWindowOpen.Normalization'.
+					</errmsg>
+					<varbindings/>
+					<item
+						timeRelativeToTestSuiteStartTime="00:15.245"
+						timeRelativeToTestModuleStartTime="00:00.004"
+						timeWallClock="17:33:16"
+						time="00:15.245"
+						level="Info"
+						category="Mouse"
+						errimg="images_testme1_20160327_173301\testme1_20160327_173301_4b890fb5_trace.jpg"
+						errthumb="images_testme1_20160327_173301\testme1_20160327_173301_4b890fb5_trace_thumb.jpg">
+						<message>
+							Mouse Left Click item 'SYSTRANDictionaryManager.SdmWindowOpen.Normalization' at 10;8.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='Normalization']"
+							fullname="helloprojRepository.SYSTRANDictionaryManager.SdmWindowOpen.Normalization"
+							id="210c9ed961c44356abe3bf7f94002ee9"
+							timeout="90000"
+							codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\ClickOnNormalizationInOpenDict.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info"/>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:43.313"
+						timeRelativeToTestModuleStartTime="00:28.072"
+						timeWallClock="17:33:44"
+						time="00:43.313"
+						level="Error"
+						category="Module"
+						errimg="images_testme1_20160327_173301\testme1_20160327_173301_cfe2ec6e_trace.jpg"
+						errthumb="images_testme1_20160327_173301\testme1_20160327_173301_cfe2ec6e_trace_thumb.jpg">
+						<message>
+							Failed to find item 'helloprojRepository.SYSTRANDictionaryManager.SdmWindowOpen.Normalization'.<br/>No element found for path './/container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='Normalization']' within 1m.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)
+   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)
+   at helloproj.helloprojRepositoryFolders.SdmWindowOpenFolder.get_Normalization() in c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\helloprojRepository.cs:line 711
+   at helloproj.ClickOnNormalizationInOpenDict.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\ClickOnNormalizationInOpenDict.cs:line 83
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)"
+							codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\ClickOnNormalizationInOpenDict.cs"
+							codeline="83"
+							type="repoitem"
+							path="/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='Normalization']"
+							fullname="helloprojRepository.SYSTRANDictionaryManager.SdmWindowOpen.Normalization"
+							id="210c9ed961c44356abe3bf7f94002ee9"
+							timeout="90000"
+							loglvl="Error"
+							itemindex="0"/>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

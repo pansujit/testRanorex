@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="15c09c52aa39c8c0"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="sujit"
+		host="SUJIT-PC"
+		rxversion="5.4.5.19886"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="64bit"
+		language="en-US"
+		screenresolution="1280x800"
+		timestamp="3/27/2016 2:25:39 PM"
+		timestampiso="2016-03-27T12:25:39"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings/>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.557"
+			timeRelativeToTestModuleStartTime="00:01.559"
+			timeWallClock="14:25:41"
+			time="00:01.557"
+			level="Info"
+			category="Application"
+			errimg=".\Recording120160327_142525_6aa1a470_trace.jpg"
+			errthumb=".\Recording120160327_142525_6aa1a470_trace_thumb.jpg">
+			<message>
+				Run application 'C:\Program Files (x86)\SYSTRAN 8 TRANSLATOR\applications\SystranDictionaryManager.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="82"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.957"
+			timeRelativeToTestModuleStartTime="00:01.959"
+			timeWallClock="14:25:41"
+			time="00:01.957"
+			level="Info"
+			category="Mouse"
+			errimg=".\Recording120160327_142525_81e31e1c_trace.jpg"
+			errthumb=".\Recording120160327_142525_81e31e1c_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'SYSTRANDictionaryManager.File' at 16;9.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^SYSTRAN\ Dictionary\ Manage']//menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='File']"
+				fullname="helloprojRepository.SYSTRANDictionaryManager.File"
+				id="fc52f8c5fc9c44eca41d8c29303ea8b2"
+				timeout="60000"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:31.471"
+			timeRelativeToTestModuleStartTime="00:31.473"
+			timeWallClock="14:26:11"
+			time="00:31.471"
+			level="Error"
+			category="User"
+			errimg=".\Recording120160327_142525_9c73fe46_trace.jpg"
+			errthumb=".\Recording120160327_142525_9c73fe46_trace_thumb.jpg">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error"/>
+		</item>
+	</activity>
+</report>

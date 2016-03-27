@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<activity
+		result="Failed"
+		duration="0ms"
+		durationms="0"
+		type="root"
+		rid="1b7d6f2ea431de1c"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		user="sujit"
+		host="SUJIT-PC"
+		rxversion="5.4.5.19886"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="64bit"
+		language="en-US"
+		screenresolution="1280x800"
+		timestamp="3/27/2016 2:52:44 PM"
+		timestampiso="2016-03-27T12:52:44"
+		timeoutfactor="1"
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<errmsg>
+			Failed to find item 'helloprojRepository.DictionaryPropertiesBaseForm.TextEmbeddableTextBox'.
+		</errmsg>
+		<varbindings/>
+		<item
+			timeRelativeToTestSuiteStartTime="00:00.968"
+			timeRelativeToTestModuleStartTime="00:00.969"
+			timeWallClock="14:52:45"
+			time="00:00.968"
+			level="Info"
+			category="Application">
+			<message>
+				Run application 'C:\Program Files (x86)\SYSTRAN 8 TRANSLATOR\applications\SystranDictionaryManager.exe' with arguments '' in normal mode.
+			</message>
+			<metainfo
+				itemindex="0"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="82"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.091"
+			timeRelativeToTestModuleStartTime="00:01.092"
+			timeWallClock="14:52:45"
+			time="00:01.091"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'SYSTRANDictionaryManager.File' at 15;10.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title~'^SYSTRAN\ Dictionary\ Manage']//menubar[@accessiblename='Toolbar']/menuitem[@accessiblename='File']"
+				fullname="helloprojRepository.SYSTRANDictionaryManager.File"
+				id="fc52f8c5fc9c44eca41d8c29303ea8b2"
+				timeout="60000"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.288"
+			timeRelativeToTestModuleStartTime="00:12.290"
+			timeWallClock="14:52:56"
+			time="00:12.288"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'SystranDictionaryManager1.MenuPopup' at 147;14.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/contextmenu[@accessiblerole='MenuPopup']"
+				fullname="helloprojRepository.SystranDictionaryManager1.MenuPopup"
+				id="43244df9523348c8bfb081bfa2880e0a"
+				timeout="60000"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.563"
+			timeRelativeToTestModuleStartTime="00:13.565"
+			timeWallClock="14:52:57"
+			time="00:13.563"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DictionaryPropertiesBaseForm.ButtonEditorDropdownButton' at 8;6.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='cbDictType']/button[@automationid='[Editor] dropdown button']"
+				fullname="helloprojRepository.DictionaryPropertiesBaseForm.ButtonEditorDropdownButton"
+				id="1c011f33182f456e963bbe0ab2b84e0a"
+				timeout="60000"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="94"
+				itemindex="3"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.018"
+			timeRelativeToTestModuleStartTime="00:16.019"
+			timeWallClock="14:53:00"
+			time="00:16.018"
+			level="Info"
+			category="Mouse"
+			errimg=".\Recording120160327_145233_5b67a6fe_trace.jpg"
+			errthumb=".\Recording120160327_145233_5b67a6fe_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'SystranDictionaryManager1.ListItemValuelistValueListItem2' at 258;7.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/listitem[@automationid='[valuelist] ValueListItem 2']"
+				fullname="helloprojRepository.SystranDictionaryManager1.ListItemValuelistValueListItem2"
+				id="730cdbd9e9d04323a1d188e41aa1a641"
+				timeout="60000"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="98"
+				itemindex="4"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.467"
+			timeRelativeToTestModuleStartTime="00:17.468"
+			timeWallClock="14:53:01"
+			time="00:17.467"
+			level="Info"
+			category="Mouse"
+			errimg=".\Recording120160327_145233_bb493adb_trace.jpg"
+			errthumb=".\Recording120160327_145233_bb493adb_trace_thumb.jpg">
+			<message>
+				Mouse Left Click item 'DictionaryPropertiesBaseForm.TextEmbeddableTextBox' at 191;6.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@controlname='DictionaryPropertiesBaseForm']/?/?/text[@controltypename='EmbeddableTextBoxWithUIPermissions' and @instance='0']"
+				fullname="helloprojRepository.DictionaryPropertiesBaseForm.TextEmbeddableTextBox"
+				id="abb68594d0234fa2b756e558141c037b"
+				timeout="60000"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="102"
+				itemindex="5"
+				loglvl="Info"/>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:51.088"
+			timeRelativeToTestModuleStartTime="00:51.089"
+			timeWallClock="14:53:35"
+			time="00:51.088"
+			level="Error"
+			category="Module"
+			errimg=".\Recording120160327_145233_2a742878_trace.jpg"
+			errthumb=".\Recording120160327_145233_2a742878_trace_thumb.jpg">
+			<message>
+				Failed to find item 'helloprojRepository.DictionaryPropertiesBaseForm.TextEmbeddableTextBox'.<br/>No element found for path '?/?/text[@controltypename='EmbeddableTextBoxWithUIPermissions' and @instance='0']' within 30s.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)
+   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)
+   at helloproj.helloprojRepositoryFolders.DictionaryPropertiesBaseFormAppFolder.get_TextEmbeddableTextBox() in c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\helloprojRepository.cs:line 961
+   at helloproj.Recording1.Ranorex.Core.Testing.ITestModule.Run() in c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs:line 103
+   at Ranorex.Core.Testing.TestSuiteModule.RunInternal(DataContext parentDataContext)"
+				codefile="c:\Users\sujit\Documents\Ranorex\RanorexStudio Projects\testme1\helloproj\Recording1.cs"
+				codeline="103"
+				type="repoitem"
+				path="/form[@controlname='DictionaryPropertiesBaseForm']/?/?/text[@controltypename='EmbeddableTextBoxWithUIPermissions' and @instance='0']"
+				fullname="helloprojRepository.DictionaryPropertiesBaseForm.TextEmbeddableTextBox"
+				id="abb68594d0234fa2b756e558141c037b"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="5"/>
+		</item>
+	</activity>
+</report>

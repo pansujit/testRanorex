@@ -51,6 +51,218 @@ rxversion="5.4.5.19886">
 			refimgid="75928db6-3be0-4f03-aec0-c3322992d7da">
 				/form[@title~'^SYSTRAN\ Dictionary\ Manage']/?/?/button[@accessiblename='Close']
 			</item>
+			<item
+			name="UserDictionaries"
+			id="afa6b728-8c18-4592-8543-9594f4fc71df"
+			searchtimeout="30000ms"
+			capname="treeitem"
+			refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='8']/container/container/element[@controlname='mView']/tree/treeitem[@accessiblename='User Dictionaries']"
+			addcaps="treeitem,accessible"
+			refimgid="a6c01777-2976-4360-b375-93b14d399610">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='User Dictionaries']
+			</item>
+			<folder
+			name="SdmWindowOpen"
+			id="b41a6a1c-14ab-450b-8df3-d36d97135cb7"
+			searchtimeout="30000ms"
+			capname="container"
+			refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='8']/container[@caption='']/container[@controlname='sdm.window.open']"
+			addcaps="container,control,nativewindow"
+			isrooted="True"
+			usecache="False">
+				<item
+				name="DictionaryType"
+				id="b779f7b4-50ef-47df-b0d8-6e41c5f68e90"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='8']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mDictionaryPropertiesView']/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Dictionary type:']"
+				addcaps="text,control,nativewindow"
+				refimgid="bf0a88a1-c463-4be1-bd73-6ea32d41f824">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Dictionary type:']
+				</item>
+				<item
+				name="TreeItemENFRHello"
+				id="373e509a-7258-4ebc-97cf-cecbdac4ec6a"
+				searchtimeout="30000ms"
+				capname="treeitem"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='8']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mView']/tree[@accessiblename='French']/treeitem[@accessiblename='[EN-FR] hello']"
+				addcaps="treeitem,accessible"
+				refimgid="a7566f0f-eb94-4573-bf9c-115de208b721">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/tree[@accessiblename='French']/treeitem[@accessiblename='[EN-FR] hello']
+				</item>
+				<item
+				name="UserDictionaries"
+				id="96ada926-2d4c-43bf-9e7f-f51712cc9dd8"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='8']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mDictionaryPropertiesView']/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='User Dictionaries']"
+				addcaps="text,control,nativewindow"
+				refimgid="d501bcaa-86a9-412e-89ba-fe5a4c0e1a4f">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='User Dictionaries']
+				</item>
+				<item
+				name="Author"
+				id="210df204-cad0-4fdd-a318-328242c37327"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='8']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mDictionaryPropertiesView']/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Author:']"
+				addcaps="text,control,nativewindow"
+				refimgid="1fb81c84-3186-4e4a-acfa-97874ecde1c8">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Author:']
+				</item>
+				<item
+				name="Sujit"
+				id="3e3ec447-b2c3-4cf2-bd53-de96b11336fe"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='8']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mDictionaryPropertiesView']/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='sujit']"
+				addcaps="text,control,nativewindow"
+				refimgid="29f42e8b-39bb-44f5-8766-b6b1169e9122">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='sujit']
+				</item>
+				<item
+				name="PushButton"
+				id="4ec9cfdc-a041-4b1d-aa01-b899f92b47de"
+				searchtimeout="30000ms"
+				capname="button"
+				refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container/container/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container/toolbar/button[@accessiblename='' and @accessiblerole='PushButton' and @text='' and @accessibledescription~'^Delete\ selected\ dictionar']"
+				addcaps="button,accessible"
+				refimgid="d2a0699b-d8bb-4e69-896a-b0fe39135661">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']//toolbar[@accessiblename='Toolbar']/button[@accessiblerole='PushButton' and @text='' and @accessibledescription~'^Delete\ selected\ dictionar']
+				</item>
+				<item
+				name="TreeItemYouDoNotHaveAnyDictionarie"
+				id="e3d7f4f7-f2bc-48ad-b5bd-ccd769e287a1"
+				searchtimeout="30000ms"
+				capname="treeitem"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mView']/tree[@accessiblename='French']/treeitem[@accessiblename='(You do not have any Dictionaries to open)']"
+				addcaps="treeitem,accessible"
+				refimgid="7aaf8b49-684f-49f1-89b2-26af0b8c9fa4">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/tree[@accessiblename='French']/treeitem[@accessiblename~'^\(You\ do\ not\ have\ any\ Dict']
+				</item>
+				<item
+				name="TreeItemENFRHello1"
+				id="92e2ba67-37b6-4dea-95a6-593f7d3851f2"
+				searchtimeout="30000ms"
+				capname="treeitem"
+				refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container/container/element[@controlname='mView']/tree/treeitem[@accessiblename='[EN-FR] hello']"
+				addcaps="treeitem,accessible"
+				refimgid="c4a66845-6c50-40b4-8142-596c7d67e31b">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='[EN-FR] hello']
+				</item>
+				<item
+				name="Normalization"
+				id="210c9ed9-61c4-4356-abe3-bf7f94002ee9"
+				searchtimeout="30000ms"
+				capname="treeitem"
+				refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container/container/element[@controlname='mView']/tree/treeitem[@accessiblename='Normalization']"
+				addcaps="treeitem,accessible"
+				refimgid="a2b10a17-4b5b-4fb6-96ee-e553bb448350">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='Normalization']
+				</item>
+				<item
+				name="TreeItemENHello"
+				id="6b93bf6a-fe99-49f7-a796-93882f0bc021"
+				searchtimeout="30000ms"
+				capname="treeitem"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mView']/tree[@accessiblerole='Outline']/treeitem[@accessiblename='[EN] hello']"
+				addcaps="treeitem,accessible"
+				refimgid="0ee7aab4-a14e-48de-b5e3-12b2dfb63e2c">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='[EN] hello']
+				</item>
+				<item
+				name="Normalization1"
+				id="a31966ff-44af-4ba9-8710-04a9f9bafa6c"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mDictionaryPropertiesView']/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Normalization']"
+				addcaps="text,control,nativewindow"
+				refimgid="ef4110b1-1921-41f0-9b4a-7ee71d7e1e6d">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Normalization']
+				</item>
+				<item
+				name="TreeItemYouDoNotHaveAnyDictionarie1"
+				id="4a3e347a-a5d0-406f-8164-393eb2bff7d9"
+				searchtimeout="30000ms"
+				capname="treeitem"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mView']/tree[@accessiblename='English']/treeitem[@accessiblename='(You do not have any Dictionaries to open)']"
+				addcaps="treeitem,accessible"
+				refimgid="e3dbd756-8978-42e6-bcf3-16f987c06577">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/tree[@accessiblename='English']/treeitem[@accessiblename~'^\(You\ do\ not\ have\ any\ Dict']
+				</item>
+				<item
+				name="TranslationMemories"
+				id="50d9146d-9670-4e9a-bb57-2974b1e82bbd"
+				searchtimeout="30000ms"
+				capname="treeitem"
+				refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container/container/element[@controlname='mView']/tree/treeitem[@accessiblename='Translation Memories']"
+				addcaps="treeitem,accessible"
+				refimgid="c0f23631-84d8-4fff-8dda-d91f70650ee6">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/element[@controlname='mView']/?/?/treeitem[@accessiblename='Translation Memories']
+				</item>
+				<item
+				name="TranslationMemories1"
+				id="9959036d-bf39-4d46-a255-4ff56780d301"
+				searchtimeout="30000ms"
+				capname="text"
+				refpath="/form[@title='SYSTRAN Dictionary Manager']/container[@caption='' and @controltypename='WindowDockingArea' and @instance='9']/container[@caption='']/container[@controlname='sdm.window.open']/element[@controlname='mDictionaryPropertiesView']/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Translation Memories']"
+				addcaps="text,control,nativewindow"
+				refimgid="86dd8816-64cb-430f-903c-a76c8082c0ee">
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']/?/?/container[@controlname='mDictionaryPropertiesView.ClientArea']/text[@caption='Translation Memories']
+				</item>
+				<basepath>
+					/form[@title~'^SYSTRAN\ Dictionary\ Manage']//container[@controlname='sdm.window.open']
+				</basepath>
+			</folder>
+			<item
+			name="EnglishSourceLanguage"
+			id="d29d80d2-a863-4d18-98e0-507871782796"
+			searchtimeout="30000ms"
+			capname="cell"
+			refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/element[@controltypename='MdiClient']/form/container/table/row/cell[@accessiblename='English (Source language)']"
+			addcaps="cell,accessible"
+			refimgid="5eb222bf-0986-464c-9270-f53d500a442b">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']//table[@controlname='mEntriesView']/row[@accessiblename='0']/cell[@accessiblename='English (Source language)']
+			</item>
+			<item
+			name="Row0"
+			id="414fa018-df80-4412-abfe-f5309d72f2bb"
+			searchtimeout="30000ms"
+			capname="row"
+			addcaps="row,accessible"
+			refimgid="dc05d140-427a-433b-9aaa-5976e69b4a65">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']/?/?/form[@controlid='1']/?/?/table[@controlname='mEntriesView']/row[@accessiblename='0']
+			</item>
+			<item
+			name="FrenchTargetLanguage"
+			id="929d9e4e-f7a0-4a9d-9abf-d71eeb29dca7"
+			searchtimeout="30000ms"
+			capname="cell"
+			refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/element[@controltypename='MdiClient']/form/container/table/row[@accessiblename='0']/cell[@accessiblename='French (Target language)']"
+			addcaps="cell,accessible"
+			refimgid="4e6b0134-93f0-4b16-ab38-d5b18b14114a">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']//table[@controlname='mEntriesView']/row[@accessiblename='0']/cell[@accessiblename='French (Target language)']
+			</item>
+			<item
+			name="Save"
+			id="22c35572-072f-48e3-a756-1d9c771510ad"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container/toolbar[1]/button[@accessiblename='Save']"
+			addcaps="button,accessible"
+			refimgid="cbaae26c-5540-4ae1-94c5-b05dbd024aea">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']/element[@controltypename='UltraToolbarsDockArea' and @instance='0']/container[@accessiblename='DockTop']/toolbar[1]/button[@accessiblename='Save']
+			</item>
+			<item
+			name="EnglishNormalized"
+			id="237b7041-a6d8-4ace-ae1d-f99c2b014153"
+			searchtimeout="30000ms"
+			capname="cell"
+			refpath="/form[@title~'^SYSTRAN\ Dictionary\ Manage']/element[@controltypename='MdiClient']/form/container/table/row[@accessiblename='0']/cell[@accessiblename='English (Normalized)']"
+			addcaps="cell,accessible"
+			refimgid="afd6a7df-6120-4524-82f9-c6ab9ba1bc7b">
+				/form[@title~'^SYSTRAN\ Dictionary\ Manage']//table[@controlname='mEntriesView']/row[@accessiblename='0']/cell[@accessiblename='English (Normalized)']
+			</item>
 			<basepath>
 				/form[@title~'^SYSTRAN\ Dictionary\ Manage']
 			</basepath>
@@ -105,6 +317,16 @@ JwAAAABJRU5ErkJggg==
 			addcaps="listitem,uiautomation"
 			refimgid="06b782bc-0982-4992-8f56-5bec5390f2cb">
 				/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/listitem[@automationid='[valuelist] ValueListItem 0']
+			</item>
+			<item
+			name="ListItemValuelistValueListItem1"
+			id="07e25135-df6a-463b-80ef-8357e502778f"
+			searchtimeout="30000ms"
+			capname="listitem"
+			refpath="/form[@title='' and @processname='SystranDictionaryManager']/element/listitem[@automationid='[valuelist] ValueListItem 1']"
+			addcaps="listitem,uiautomation"
+			refimgid="3ae42077-68a1-42c8-bea2-131b2d7eb934">
+				/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']/?/?/listitem[@automationid='[valuelist] ValueListItem 1']
 			</item>
 			<basepath>
 				/form[@processname='SystranDictionaryManager' and @controltypename='DropDownForm']
@@ -181,6 +403,35 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			refimgid="81aece8d-bd76-47eb-8e66-64f268bfa933">
 				/form[@controlname='DictionaryPropertiesBaseForm']/?/?/button[@accessiblename='OK']
 			</item>
+			<item
+			name="TextEditorEditArea1"
+			id="536f7b95-32d1-4e61-820f-061525a4baf8"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='txtAuthor']/text[@automationid='[Editor] Edit Area']"
+			addcaps="text,uiautomation,uiautomationvalue"
+			refimgid="05f22b95-a471-4f17-8eec-56522d56102b">
+				/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='txtAuthor']/text[@automationid='[Editor] Edit Area']
+			</item>
+			<item
+			name="TxtAuthor"
+			id="c2683cab-77d4-46a8-85fc-2473eb0088c3"
+			searchtimeout="30000ms"
+			capname="unknown"
+			addcaps="unknown,control,nativewindow"
+			refimgid="2ad8c683-1b88-45c3-a0b7-3ef10543738c">
+				/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='txtAuthor']
+			</item>
+			<item
+			name="ButtonEditorDropdownButton2"
+			id="b01bc692-ac86-4aaa-b960-308f829ca076"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@controlname='DictionaryPropertiesBaseForm']/element[@controlname='cbSrcLang']/button[@automationid='[Editor] dropdown button']"
+			addcaps="button,uiautomation,uiautomationinvoke"
+			refimgid="3943b6e2-0b78-4b4d-b610-94b87d884934">
+				/form[@controlname='DictionaryPropertiesBaseForm']/?/?/button[@automationid='[Editor] dropdown button']
+			</item>
 			<basepath>
 				/form[@controlname='DictionaryPropertiesBaseForm']
 			</basepath>
@@ -217,8 +468,94 @@ XrLp0EM2aG+RntUiB+ZT6fxfIsRPbYnQgbXhGFYAAAAASUVORK5CYII=
 			refimgid="39cdfaf6-6b8b-4816-b444-c98dc50ef4a7">
 				/form[@title='hello']/button[@text='&amp;No']
 			</item>
+			<item
+			name="ButtonYes"
+			id="408df129-25d5-4fbb-b89c-999fb7cbf8e6"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='hello']/button[@text='&amp;Yes']"
+			addcaps="button,nativewindow"
+			refimgid="55beb31b-18a6-492c-b28e-8e5b3f577851">
+				/form[@title='hello']/button[@text='&amp;Yes']
+			</item>
 			<basepath>
 				/form[@title='hello']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJLSURBVDhPlZLva1JRGMd9sb/E/Qm1GuGbehE1
+6E0trxNhrLJgYntRImTWgnJEL7bWKGL9WKErKtKJsKJf1qDpdemcmc10S3BTdBjmdnVXvd/Oud67
+ZbEXPvDAued5vp/vc885in9DEIR2kkO1ep3NFiu5/Ppmrl4X/HQPgFJq+z9IsY02BdNF/px7Eaqx
+AHYN+8Q8cGcOg6+TWFrb4EmPjfZKskbQDeI4dePDT+yWRHLuu8Xi8HhQXO+96cdkMAMCcTVBqLPt
+3VKTkLpOBFZQqtTwKLDaVHsaylKITRa3zywXeLnYMeLH9ffLKFaqxKQRFGR4GcPRiXnsIVN0jvqR
+KnA8KSlFd/2zqCg+ePcLQiu/G6odguPr+LT0Cx+ThcYUBa7Kdow03I/cD+EUgfXYF3CMuB0fnwXz
+cA69T75iwPUdV98k8fhzArPJHMoERAA+xXy6mJPHl/PQ2WvoO9MPi8UCs9mM7hMGdBkuo+90P6xW
+K0wmE04aBsCybFaxmN/IqcbYLbHqyguoNT3gOE4aGohGo6KoWt0+F7fbDaPRWKJn4F/frMFL/ume
+L43zt5+DYRiUy2WpFUilUqLz3+HxeKBWq8viIXq+5bGwWkJNEOD1elsDkLXy7Y818Rrp62OG7K0B
+pLdguzidEM9g/4UHrQPIdxu5FtelV4ktQCaTQSQSQSwWE5MC6F44HEY8HofT6dwG0KAQOsnk1DRP
+ARqNRgTtlLTeBJBDr9f3arVaj91u9xG3LE2Hw+HT6XTDRNRNRJ0kuwhkkGGYmT8JGsGKAA4XTAAA
+AABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="ConfirmDictionaryDelete"
+		id="8e461794-84bc-4891-b459-50cdbb2c66a1"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Confirm Dictionary delete']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ButtonYes"
+			id="efc42e70-95d5-42ed-ad1a-f74260711a15"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='Confirm Dictionary delete']/button[@text='&amp;Yes']"
+			addcaps="button,nativewindow"
+			refimgid="a07d2ade-cb6a-4a29-9dca-c1727ad92df6">
+				/form[@title='Confirm Dictionary delete']/button[@text='&amp;Yes']
+			</item>
+			<basepath>
+				/form[@title='Confirm Dictionary delete']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAJLSURBVDhPlZLva1JRGMd9sb/E/Qm1GuGbehE1
+6E0trxNhrLJgYntRImTWgnJEL7bWKGL9WKErKtKJsKJf1qDpdemcmc10S3BTdBjmdnVXvd/Oud67
+ZbEXPvDAued5vp/vc885in9DEIR2kkO1ep3NFiu5/Ppmrl4X/HQPgFJq+z9IsY02BdNF/px7Eaqx
+AHYN+8Q8cGcOg6+TWFrb4EmPjfZKskbQDeI4dePDT+yWRHLuu8Xi8HhQXO+96cdkMAMCcTVBqLPt
+3VKTkLpOBFZQqtTwKLDaVHsaylKITRa3zywXeLnYMeLH9ffLKFaqxKQRFGR4GcPRiXnsIVN0jvqR
+KnA8KSlFd/2zqCg+ePcLQiu/G6odguPr+LT0Cx+ThcYUBa7Kdow03I/cD+EUgfXYF3CMuB0fnwXz
+cA69T75iwPUdV98k8fhzArPJHMoERAA+xXy6mJPHl/PQ2WvoO9MPi8UCs9mM7hMGdBkuo+90P6xW
+K0wmE04aBsCybFaxmN/IqcbYLbHqyguoNT3gOE4aGohGo6KoWt0+F7fbDaPRWKJn4F/frMFL/ume
+L43zt5+DYRiUy2WpFUilUqLz3+HxeKBWq8viIXq+5bGwWkJNEOD1elsDkLXy7Y818Rrp62OG7K0B
+pLdguzidEM9g/4UHrQPIdxu5FtelV4ktQCaTQSQSQSwWE5MC6F44HEY8HofT6dwG0KAQOsnk1DRP
+ARqNRgTtlLTeBJBDr9f3arVaj91u9xG3LE2Hw+HT6XTDRNRNRJ0kuwhkkGGYmT8JGsGKAA4XTAAA
+AABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		name="FormGhg"
+		id="1339aa62-fe7a-4536-ae49-8887eea17e13"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='ghg']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="ButtonNo"
+			id="ca5e5364-64a8-4c94-b1d9-e80b5168f2ec"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='ghg']/button[@text='&amp;No']"
+			addcaps="button,nativewindow"
+			refimgid="8c5fc3eb-8e3e-4daf-a742-ae639d06dee2">
+				/form[@title='ghg']/button[@text='&amp;No']
+			</item>
+			<basepath>
+				/form[@title='ghg']
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
