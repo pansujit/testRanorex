@@ -60,18 +60,6 @@
     <Compile Include="Program.cs">
       <id>9e731618-8343-468c-ab34-15e8e91e13eb</id>
     </Compile>
-    <Compile Include="testme.cs">
-      <BoundTo>df45f79c-fbfd-40b6-aa25-1df69928f9ba</BoundTo>
-      <DependentUpon>testme.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>c992fa1a-df86-4453-9116-707f64a13cef</id>
-    </Compile>
-    <Compile Include="testme.UserCode.cs">
-      <BoundTo>df45f79c-fbfd-40b6-aa25-1df69928f9ba</BoundTo>
-      <DependentUpon>testme.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>b6504e36-5e51-445a-a3ba-76636c9e1beb</id>
-    </Compile>
     <Compile Include="testme1Repository.cs">
       <BoundTo>db9fa1b8-02dd-4a4e-b89a-0a802fea380a</BoundTo>
       <DependentUpon>testme1Repository.rxrep</DependentUpon>
@@ -80,11 +68,6 @@
     </Compile>
     <None Include="app.config">
       <id>e176aff0-f411-4d0a-ae0c-c3813f925606</id>
-    </None>
-    <None Include="testme.rxrec">
-      <BoundTo>db9fa1b8-02dd-4a4e-b89a-0a802fea380a</BoundTo>
-      <id>df45f79c-fbfd-40b6-aa25-1df69928f9ba</id>
-      <recordtableid>49a4a8a6-1563-4c0b-abe6-042fec337c37</recordtableid>
     </None>
     <None Include="testme1Repository.rximg">
       <BoundTo>db9fa1b8-02dd-4a4e-b89a-0a802fea380a</BoundTo>

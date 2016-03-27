@@ -15,15 +15,6 @@ TracingScreenshotQuality="40"
 reportlevel="Info;20">
 	<content>
 		<testcase
-		name="sit"
-		id="f5e31425-8507-4b47-a822-997f38dba258">
-			<testmodule
-			name="Testme"
-			id="a191fd1f-9e5f-4ef2-b227-8e087a423662"
-			ref="49a4a8a6-1563-4c0b-abe6-042fec337c37"
-			type="Recording"/>
-		</testcase>
-		<testcase
 		name="createDict"
 		id="4aa2762e-214f-4e53-98f5-83fc33c4841a">
 			<testmodule
@@ -553,7 +544,28 @@ reportlevel="Info;20">
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
-		name="TestRun"/>
+		name="TestRun">
+			<testcase
+			id="4aa2762e-214f-4e53-98f5-83fc33c4841a"/>
+			<testcase
+			id="620a1320-f651-4b61-924b-2f686782bd54"/>
+			<testcase
+			id="85ab241b-02f8-49a9-9143-7e9299289a6d"/>
+			<testcase
+			id="9b8e0a6a-3a08-46d6-92cb-0f4af1ede09d"/>
+			<testcase
+			id="b635c318-f4b9-431d-8918-800e41ca5c8d"/>
+			<testcase
+			id="d88b14dc-0c89-4643-b6b0-74fcc0d5c3d4"/>
+			<testcase
+			id="e9be3e8a-4743-451c-87c8-17e472dfb929"/>
+			<testcase
+			id="eafe229a-8c43-4f76-8508-e43fa301ad08"/>
+			<testcase
+			id="fc8034fc-a8b2-4d34-a589-e966e800ae2e"/>
+			<testcase
+			id="fde64bb6-2881-4775-8817-7b0ee51074c5"/>
+		</testconfiguration>
 	</testconfigurations>
 	<references>
 		<reference>
